@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "author": "Weverson Barbieri",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 67.8, "left": 28.2, "attrs": {} },
+    {
+      "type": "wokwi-analog-joystick",
+      "id": "joystick1",
+      "top": -144.6,
+      "left": 130.2,
+      "attrs": {}
+    }
+  ],
+  "connections": [],
+  "dependencies": {}
+}
