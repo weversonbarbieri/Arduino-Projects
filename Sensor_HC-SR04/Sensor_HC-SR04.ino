@@ -1,11 +1,11 @@
 
-int echoPin = 5; //pin responsible for reading the sound wave when they return from the obstacle.
-int trigPin = 6; //pin responsible for generating the sound wave.
+int echoPin = 5; //Pin responsible for reading the sound wave when they return from the obstacle.
+int trigPin = 6; //Pin responsible for generating the sound wave.
 int LED=13;
-float duration, ditance;
+float duration, distance;
 
 void setup() {
-  pinMode(trigPin, OUTPUT); //OUTPUT because the trigPin emit the sound wave.
+  pinMode(trigPin, OUTPUT); //OUTPUT because the trigPin emits the sound wave.
   pinMode(echoPin, INPUT);
   pinMode(LED, OUTPUT);
   Serial.begin(9600);
@@ -19,9 +19,12 @@ void loop() {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  duration = pulseIn(echoPin, HIGH);
+  distance = pulseIn(echoPin, HIGH);
 
-  if (duration < 500)
+//This condition makes the LED turn on when the distance from the obstacle is lower than 500.
+//And turns off when the distance from the obstacle is higher than 500.
+  
+  if (distance < 500)
      digitalWrite(LED, HIGH);
   else
      digitalWrite(LED, LOW);
