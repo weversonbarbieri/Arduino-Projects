@@ -1,1 +1,3 @@
-This circuit represents a barrier control system for a parking lot. Each button corresponds to sensors that determine the ticket status, followed by the gate status. The servo motor represents the barrier, and the display shows the current ticket and gate status.
+This circuit represents a barrier control system for a parking lot. 
+Each button corresponds to sensors that determine the ticket status, followed by the gate status. 
+The servo motor represents the barrier, and the display shows the current ticket and gate status.
